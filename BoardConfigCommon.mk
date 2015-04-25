@@ -37,16 +37,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01700000
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8-sm/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-
-# Rom Optimization
-USE_GRAPHITE := true
-USE_FSTRICT_FLAGS := true
-FSTRICT_ALIASING_WARNING_LEVEL := 3
-USE_BINARY_FLAGS := true
-USE_EXTRA_CLANG_FLAGS := true
-USE_LTO := true
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
